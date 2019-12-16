@@ -6,16 +6,19 @@ services:
     build:
       context: .
       dockerfile: Gateway/Dockerfile
+  # http://localhost:7000/pedido/api/values
+  # http://localhost:7000/catalogo/api/values
 
   pedido:
     image: pedido
     build:
       context: .
       dockerfile: Pedido/Dockerfile
-
+  # http://localhost:6001/api/values
 
   catalogo:
     image: catalogo
     build:
       context: .
-      dockerfile: Catalogo/Dockerfile
+      dockerfile: Produto/Dockerfile
+  # http://localhost:6002/api/values

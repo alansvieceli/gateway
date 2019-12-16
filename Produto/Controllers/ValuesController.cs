@@ -4,17 +4,17 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 
-namespace Pedido.Controllers
+namespace Catalogo.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class PedidosController : ControllerBase
+    public class ValuesController : ControllerBase
     {
         // GET api/values
         [HttpGet]
         public ActionResult<IEnumerable<string>> Get()
         {
-            return new string[] { "Item 1", "Item 2" };
+            return new string[] { "Produto 1", "Produto 2", "Produto 3", "Produto 4" };
         }
 
         // GET api/values/5
